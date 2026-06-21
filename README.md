@@ -9,7 +9,7 @@
 ## 进度
 
 ```
-M1 ████████░░░░░░░░ Day  1-15   Python 工程化 + Transformer + LLM API
+M1 ████████░░░░░░░░ Day  1-15   Python 工程化 + LLM API + Agent 基础
 M2 ████████████░░░░ Day 16-35   RAG + 代码审查 Agent 项目
 M3 ████████████████ Day 36-50   Agent 范式 + 算法 + 面试
 ```
