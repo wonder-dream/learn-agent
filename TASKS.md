@@ -4,20 +4,20 @@
 
 | Day | 主题 | 产出 |
 |-----|------|------|
-| 01 | Python 工程化：类型注解 + pydantic | `notes/engineering/python-types.md` |
-| 02 | Python 工程化：asyncio 异步编程 | `notes/engineering/python-asyncio.md` |
-| 03 | Python 工程化：pytest 测试 + 项目骨架 | `projects/code-review-agent/` 初始化 |
-| 04 | FastAPI 基础：路由 + 请求/响应模型 | `notes/engineering/fastapi-basics.md` |
-| 05 | FastAPI 进阶：依赖注入 + 中间件 | `notes/engineering/fastapi-advanced.md` |
-| 06 | LLM API 调通：DeepSeek-v4-pro chat | `projects/code-review-agent/src/llm_client.py` |
-| 07 | LLM API：流式输出 + Tool Calling | `notes/agent/function-calling.md` |
-| 08 | Prompt 工程：System Prompt + Few-shot + CoT | `notes/prompt/prompt-engineering.md` |
-| 09 | Transformer 原理一：Attention 机制 | `notes/transformer/attention.md` |
-| 10 | Transformer 原理二：位置编码 + FFN + LayerNorm | `notes/transformer/architecture.md` |
-| 11 | Tokenization + Context Window | `notes/transformer/tokenization.md` |
-| 12 | 手写最简 Agent 循环（原生 Python） | `projects/code-review-agent/src/simple_agent.py` |
-| 13 | LangGraph 入门：StateGraph + Node + Edge | `notes/agent/langgraph-basics.md` |
-| 14 | LangGraph 进阶：条件路由 + Checkpoint | `notes/agent/langgraph-advanced.md` |
+| 01 | Python 语法糖一：列表/字典/集合/字符串 | `notes/engineering/python-syntax-1.md` |
+| 02 | Python 语法糖二：lambda/解包/装饰器/文件IO | `notes/engineering/python-syntax-2.md` |
+| 03 | 类型注解 + pydantic v2 | `notes/engineering/python-types.md` |
+| 04 | asyncio 异步编程 + httpx | `notes/engineering/python-asyncio.md` |
+| 05 | pytest + 项目骨架测试 | `projects/code-review-agent/tests/test_schemas.py` |
+| 06 | FastAPI 基础：路由 + 请求/响应 | `notes/engineering/fastapi-basics.md` |
+| 07 | FastAPI 进阶：依赖注入 + 中间件 | `notes/engineering/fastapi-advanced.md` |
+| 08 | LLM API 调通：DeepSeek-v4-pro | `projects/code-review-agent/src/llm_client.py` |
+| 09 | Tool Calling + Function Calling 原理 | `notes/agent/function-calling.md` |
+| 10 | Prompt 工程：System Prompt + CoT | `notes/prompt/prompt-engineering.md` |
+| 11 | Transformer 一：Attention | `notes/transformer/attention.md` |
+| 12 | Transformer 二：架构 + 位置编码 | `notes/transformer/architecture.md` |
+| 13 | 手写最简 Agent 循环 | `projects/code-review-agent/src/simple_agent.py` |
+| 14 | LangGraph：StateGraph + 条件路由 | `notes/agent/langgraph-basics.md` |
 | 15 | M1 复盘 + 查漏补缺 | `daily/15.md` 含 M1 总结 |
 
 ## M2：项目实战（Day 16-35）
