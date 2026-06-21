@@ -115,7 +115,7 @@
 | M1 Day 1-2 | — | 不刷，专心 Python |
 | M1 Day 3-10 | Easy | 每天 2 道 Hot 100 Easy |
 | M1 Day 11-15 | Easy + 少量 Medium | 每天 2 道 |
-| M2 Day 16-35 | Medium 为主 | 每天 1-2 道，优先链表/树/DP |
+| M2 Day 16-35 | Medium 为主 | 每天 3 道，穿插复习 |
 | M3 Day 36-40 | 专项突击 | 每天 8-10 道 |
 
 ## 变更记录
