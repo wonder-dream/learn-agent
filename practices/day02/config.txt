@@ -1,0 +1,6 @@
+host=localhost
+port=8000
+debug=true
+# this is a comment
+
+workers=4
