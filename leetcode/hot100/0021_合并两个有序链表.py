@@ -7,11 +7,6 @@
 将两个升序链表合并为一个新的升序链表并返回。
 """
 
-class Solution:
-    def mergeTwoLists(self, list1: ListNode | None, list2: ListNode | None) -> ListNode | None:
-        """合并两个升序链表为一个新的升序链表。"""
-        pass
-
 
 class ListNode:
     def __init__(self, x=0, next=None):
@@ -34,6 +29,30 @@ class ListNode:
             res.append(head.val)
             head = head.next
         return res
+
+
+class Solution:
+    def mergeTwoLists(
+        self, list1: ListNode | None, list2: ListNode | None
+    ) -> ListNode | None:
+        """合并两个升序链表为一个新的升序链表。"""
+        dummy = ListNode()
+        cur = dummy
+        while list1 and list2:
+            if list1.val <= list2.val:
+                cur.next = list1
+                list1 = list1.next
+                cur = cur.next
+            else:
+                cur.next = list2
+                list2 = list2.next
+                cur = cur.next
+
+        if list1:
+            cur.next = list1
+        else:
+            cur.next = list2
+        return dummy.next
 
 
 if __name__ == "__main__":

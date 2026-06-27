@@ -7,11 +7,6 @@
 给你单链表的头节点 head，请你反转链表，并返回反转后的链表。
 """
 
-class Solution:
-    def reverseList(self, head: ListNode) -> ListNode | None:
-        """反转链表并返回反转后的链表。"""
-        pass
-
 
 class ListNode:
     def __init__(self, x=0, next=None):
@@ -36,7 +31,20 @@ class ListNode:
         return res
 
 
+class Solution:
+    def reverseList(self, head: ListNode) -> ListNode | None:
+        """反转链表并返回反转后的链表。"""
+        prev = None
+        while head:
+            tmp = head.next
+            head.next = prev
+            prev = head
+            head = tmp
+
+        return ListNode.to_list(prev)
+
+
 if __name__ == "__main__":
     s = Solution()
     # 在此写本地测试用例
-    pass
+    print(s.reverseList(ListNode.from_list([1, 2, 3, 4, 5])))
