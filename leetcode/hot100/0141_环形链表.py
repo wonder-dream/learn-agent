@@ -7,11 +7,6 @@
 给你一个链表的头节点 head，判断链表中是否有环。
 """
 
-class Solution:
-    def hasCycle(self, head: ListNode) -> bool:
-        """判断链表中是否有环。"""
-        pass
-
 
 class ListNode:
     def __init__(self, x=0, next=None):
@@ -34,6 +29,23 @@ class ListNode:
             res.append(head.val)
             head = head.next
         return res
+
+
+class Solution:
+    def hasCycle(self, head: ListNode) -> bool:
+        """判断链表中是否有环。"""
+        if head is None:            # 空链表直接返回 False
+            return False
+        fast = head
+        slow = head
+
+        while fast and fast.next:   # 如果 fast 是 None 那么就没有 next 这个属性，所以要先判断 fast 防止报错
+            fast = fast.next.next
+            slow = slow.next
+            if fast == slow:
+                return True
+            
+        return False
 
 
 if __name__ == "__main__":
